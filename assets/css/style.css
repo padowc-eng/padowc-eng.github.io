@@ -1,13 +1,16 @@
 /*
   William Pado Portfolio
-  v4: Simple dark code-editor layout
+  v5: Clean dark code-editor inspired layout
 
-  Design goals:
-  - Dark theme
-  - VS Code / script-file feel
-  - Clear hierarchy: Home -> Engineering Projects -> Experience
-  - No oversized bubbles / no startup landing page look
-  - Easy to add more projects later
+  Changes from previous version:
+  - Removed fake window dots
+  - Removed top title bar
+  - Removed tab strip
+  - Removed "Explorer" label
+  - Kept left sidebar navigation
+  - Main hierarchy:
+    1. Technical/Engineering Projects
+    2. Professional Experience
 */
 
 /* ---------- Theme ---------- */
@@ -15,8 +18,6 @@
   --bg: #0d1117;
   --sidebar: #161b22;
   --editor: #0d1117;
-  --topbar: #161b22;
-  --tabbar: #0f141b;
   --line: #30363d;
   --line-soft: #21262d;
 
@@ -69,45 +70,10 @@ strong {
   color: var(--heading);
 }
 
-/* ---------- Top bar ---------- */
-.topbar {
-  height: 38px;
-  background: var(--topbar);
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.window-dots {
-  display: flex;
-  gap: 7px;
-  margin-right: 16px;
-}
-
-.dot {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot.red { background: #ff5f56; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #27c93f; }
-
-.topbar-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /* ---------- Main app frame ---------- */
 .app {
   width: min(var(--max), 100%);
-  min-height: calc(100vh - 38px);
+  min-height: 100vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -119,21 +85,14 @@ strong {
 .sidebar {
   background: var(--sidebar);
   border-right: 1px solid var(--line);
-  padding: 18px 14px;
-}
-
-.sidebar-title {
-  color: var(--muted);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  padding: 22px 14px;
 }
 
 .folder-label {
   color: var(--heading);
   font-weight: 700;
-  margin-bottom: 9px;
+  margin-bottom: 14px;
+  letter-spacing: 0.2px;
 }
 
 .file-tree {
@@ -157,6 +116,7 @@ strong {
 
 .file-tree .folder {
   color: var(--muted);
+  padding-top: 9px;
 }
 
 .file-tree a:hover,
@@ -185,31 +145,9 @@ strong {
   background: var(--editor);
 }
 
-.tabs {
-  display: flex;
-  overflow-x: auto;
-  background: var(--tabbar);
-  border-bottom: 1px solid var(--line);
-}
-
-.tab {
-  color: var(--muted);
-  padding: 10px 16px;
-  border-right: 1px solid var(--line);
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-.tab.active {
-  color: var(--heading);
-  background: var(--editor);
-  border-top: 2px solid var(--blue);
-  padding-top: 8px;
-}
-
 /* ---------- Content ---------- */
 .content {
-  padding: 34px 38px 72px;
+  padding: 48px 38px 72px;
 }
 
 .kicker {
@@ -234,7 +172,7 @@ strong {
   margin-bottom: 28px;
 }
 
-/* ---------- Navigation links / project links ---------- */
+/* ---------- Navigation links ---------- */
 .link-row {
   display: flex;
   flex-wrap: wrap;
@@ -348,7 +286,7 @@ strong {
 
 .bin-row {
   display: grid;
-  grid-template-columns: 245px 1fr;
+  grid-template-columns: 255px 1fr;
   gap: 18px;
   padding: 18px;
   border-bottom: 1px solid var(--line);
@@ -410,18 +348,6 @@ strong {
   margin: 18px 0;
 }
 
-/* ---------- Status bar ---------- */
-.statusbar {
-  border-top: 1px solid var(--line);
-  background: #0b3d61;
-  color: #dbeafe;
-  font-size: 12px;
-  padding: 5px 12px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
 /* ---------- Mobile ---------- */
 @media (max-width: 860px) {
   .app {
@@ -434,7 +360,7 @@ strong {
   }
 
   .content {
-    padding: 28px 20px 62px;
+    padding: 34px 20px 62px;
   }
 
   .bin-row {

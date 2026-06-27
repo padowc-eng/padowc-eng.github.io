@@ -1,16 +1,15 @@
-# Code Editor Portfolio v4
+# Code Editor Portfolio v5 Clean
 
-Dark, simple, VS Code/script-inspired portfolio.
+Dark, simple, code-editor-inspired portfolio without fake window chrome or tabs.
 
 ## Main hierarchy
 
 - Home
-- Engineering Projects
+- Technical/Engineering Projects
   - ATLAS Exoskeleton
-  - Mill Monitoring System
-  - Smaller Design Projects
+  - CAD / Design
   - STK / Space Systems
-- Experience
+- Professional Experience
   - Reliability Engineer
 
 ## File structure
@@ -19,14 +18,14 @@ index.html
 assets/css/style.css
 projects/index.html
 projects/atlas-exoskeleton/index.html
-projects/mill-monitoring-system/index.html
-projects/design-projects/index.html
+projects/cad-design/index.html
 projects/stk-space-systems/index.html
 experience/index.html
 experience/reliability-engineer/index.html
 
 ## Notes
 
-- No images are required yet.
-- Later images should go near the text they support.
+- No fake dots/titlebar/tabs.
+- No "Explorer" label.
+- Reliability is now under Professional Experience.
 - Replace the LinkedIn placeholder in index.html.

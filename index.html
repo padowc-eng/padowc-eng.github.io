@@ -1,272 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Main homepage for padowc-eng.github.io -->
+  <!-- index.html -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>William Pado | Engineering Portfolio</title>
-  <meta name="description" content="Engineering portfolio for William Pado: mechanical design, reliability engineering, STK, CAD, MATLAB, Python, and project-based engineering experience." />
+  <title>index.html | William Pado</title>
+  <meta name="description" content="William Pado engineering portfolio." />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html">William<span>.</span>Pado</a>
-
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects/atlas.html">ATLAS</a>
-      <a href="projects/reliability.html">Reliability</a>
-      <a href="projects/stk.html">STK</a>
-      <a href="projects/cad.html">CAD</a>
-      <a href="projects/programming.html">Programming</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
+  <div class="topbar">
+    <div class="window-dots">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <div class="topbar-title">portfolio.code — William Pado Engineering Portfolio</div>
   </div>
-</header>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Mechanical Engineering Portfolio</div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-title">Explorer</div>
 
-      <h1>
-        Practical engineering work across <span class="accent">design, reliability, modeling, and code.</span>
-      </h1>
+      <div class="folder-label">WILLIAM-PADO-PORTFOLIO</div>
 
-      <p>
-        I’m a mechanical engineer focused on solving real engineering problems through hands-on design,
-        reliability improvement, modeling and simulation, applied math, and technical programming.
-      </p>
+      <ul class="file-tree">
+        <li><a class="active" href="index.html">index.html</a></li>
+        <li>
+          <span class="muted">projects/</span>
+          <ul class="file-tree sub">
+            <li><a class="" href="atlas/index.html">atlas-exoskeleton.html</a></li>
+            <li><a class="" href="cad/index.html">cad-design.html</a></li>
+            <li><a class="" href="reliability/index.html">reliability.html</a></li>
+            <li><a class="" href="experience/index.html">experience.html</a></li>
+          </ul>
+        </li>
+      </ul>
 
-      <div class="hero-meta">
-        <span class="meta-pill">Mechanical Design</span>
-        <span class="meta-pill">Reliability Engineering</span>
-        <span class="meta-pill">STK / Orbital Mechanics</span>
-        <span class="meta-pill">MATLAB / Python</span>
+      <div class="sidebar-note">
+        Simple dark portfolio layout. Images can be added later inside each project section.
+      </div>
+    </aside>
+
+    <main class="editor">
+      <div class="tabs">
+        <div class="tab active">index.html</div>
+<div class="tab ">atlas-exoskeleton.html</div>
+<div class="tab ">cad-design.html</div>
       </div>
 
-      <div class="button-row">
-        <a class="button" href="#projects">View Project Areas</a>
-        <a class="button secondary" href="#contact">Contact</a>
+      <div class="content">
+        
+<div class="kicker">// engineering portfolio</div>
+
+<h1 class="page-title">William Pado</h1>
+
+<p class="page-subtitle">
+  Mechanical engineer focused on design, reliability, modeling, applied mathematics,
+  CAD, and technical problem solving.
+</p>
+
+<div class="link-row">
+  <a href="atlas/index.html">ATLAS Exoskeleton</a>
+  <a href="cad/index.html">CAD / Design</a>
+  <a href="reliability/index.html">Reliability</a>
+  <a href="experience/index.html">Experience</a>
+  <a href="mailto:will_pado@mines.edu">Email</a>
+  <a href="https://github.com/padowc-eng">GitHub</a>
+</div>
+
+<div class="code-block">
+  <pre><span class="comment">// portfolio purpose</span>
+<span class="key">const</span> focus = {{
+  <span class="key">design</span>: <span class="string">"mechanical design, CAD, prototyping, product development"</span>,
+  <span class="key">reliability</span>: <span class="string">"manufacturing systems, PM completion, downtime reduction"</span>,
+  <span class="key">analysis</span>: <span class="string">"MATLAB, STK, Python, applied math, modeling"</span>,
+  <span class="key">goal</span>: <span class="string">"show project-based engineering skill without duplicating my resume"</span>
+}};</pre>
+</div>
+
+<section class="section" id="project-index">
+  <h2>Project index</h2>
+
+  <p>
+    This portfolio is organized like a file tree. Each page is meant to support a different type of role,
+    so someone can quickly jump to the work that matters to them.
+  </p>
+
+  <div class="project-list">
+    <div class="project-row">
+      <div class="project-row-title"><a href="atlas/index.html">ATLAS Exoskeleton</a></div>
+      <div class="project-row-body">
+        Full project page for the passive knee exoskeleton: concept, design problem, mechanism thinking,
+        prototype work, and product constraints.
       </div>
     </div>
-  </section>
 
-  <main>
-    <section class="section" id="about">
-      <div class="section-kicker">Overview</div>
-      <h2 class="section-title">A portfolio organized around what companies actually look for.</h2>
-      <p class="section-lead">
-        Instead of one long project dump, this site is split by skill area. A design-focused company can go straight to CAD,
-        a space or M&S company can go to STK and programming, and a manufacturing company can go to reliability work.
-      </p>
-
-      <div class="grid three">
-        <div class="card">
-          <h3>Build</h3>
-          <p>
-            Mechanical design, CAD, prototyping, design reviews, and product-focused engineering tradeoffs.
-          </p>
-          <div class="tags">
-            <span class="tag">SolidWorks</span>
-            <span class="tag">CAD</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Improve</h3>
-          <p>
-            Reliability engineering, downtime reduction, preventative maintenance support, and practical process improvement.
-          </p>
-          <div class="tags">
-            <span class="tag green">Reliability</span>
-            <span class="tag green">Lean Six Sigma</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Analyze</h3>
-          <p>
-            MATLAB, Python, STK, orbital mechanics, simulations, engineering calculations, and applied mathematics.
-          </p>
-          <div class="tags">
-            <span class="tag purple">MATLAB</span>
-            <span class="tag purple">STK</span>
-          </div>
-        </div>
+    <div class="project-row">
+      <div class="project-row-title"><a href="cad/index.html">CAD / Design</a></div>
+      <div class="project-row-body">
+        Page for SolidWorks, mechanical design, assemblies, drawings, mechanisms, and future design images.
       </div>
-    </section>
+    </div>
 
-    <section class="section" id="projects">
-      <div class="section-kicker">Project Areas</div>
-      <h2 class="section-title">Choose the work that matters for the role.</h2>
-      <p class="section-lead">
-        Each card opens a separate page. No images are required right now; the pages are built to stand on clear technical content.
-      </p>
-
-      <div class="grid two">
-        <article class="card project-card">
-          <div>
-            <div class="project-number">01 / Featured Project</div>
-            <h3>ATLAS Passive Knee Exoskeleton</h3>
-            <p>
-              Senior design entrepreneurship project focused on a passive knee-assist device for hiking and knee strain reduction.
-            </p>
-            <div class="tags">
-              <span class="tag">Mechanical Design</span>
-              <span class="tag">Prototyping</span>
-              <span class="tag">Product Development</span>
-            </div>
-          </div>
-          <a class="card-link" href="projects/atlas.html">Open ATLAS project →</a>
-        </article>
-
-        <article class="card project-card">
-          <div>
-            <div class="project-number">02 / Manufacturing Systems</div>
-            <h3>Reliability Engineering</h3>
-            <p>
-              Reliability work, Green Belt project, PM completion support, maintenance visibility, and real manufacturing problem solving.
-            </p>
-            <div class="tags">
-              <span class="tag green">Reliability</span>
-              <span class="tag green">Manufacturing</span>
-              <span class="tag green">Process Improvement</span>
-            </div>
-          </div>
-          <a class="card-link" href="projects/reliability.html">Open reliability page →</a>
-        </article>
-
-        <article class="card project-card">
-          <div>
-            <div class="project-number">03 / Space Systems</div>
-            <h3>STK / Space Systems</h3>
-            <p>
-              Molniya constellation analysis, orbital mechanics, mission design thinking, and STK-based modeling.
-            </p>
-            <div class="tags">
-              <span class="tag purple">STK</span>
-              <span class="tag purple">Orbital Mechanics</span>
-              <span class="tag purple">Mission Design</span>
-            </div>
-          </div>
-          <a class="card-link" href="projects/stk.html">Open STK page →</a>
-        </article>
-
-        <article class="card project-card">
-          <div>
-            <div class="project-number">04 / Mechanical Design</div>
-            <h3>Design / SolidWorks / CAD</h3>
-            <p>
-              Mechanical design, assemblies, mechanisms, prototype parts, design documentation, and CAD-based communication.
-            </p>
-            <div class="tags">
-              <span class="tag">SolidWorks</span>
-              <span class="tag">CAD</span>
-              <span class="tag">Design</span>
-            </div>
-          </div>
-          <a class="card-link" href="projects/cad.html">Open CAD page →</a>
-        </article>
-
-        <article class="card project-card">
-          <div>
-            <div class="project-number">05 / Technical Tools</div>
-            <h3>Programming / MATLAB / Python</h3>
-            <p>
-              Engineering analysis, scripts, simulations, plots, data processing, and code-based technical tools.
-            </p>
-            <div class="tags">
-              <span class="tag orange">MATLAB</span>
-              <span class="tag orange">Python</span>
-              <span class="tag orange">Data Analysis</span>
-            </div>
-          </div>
-          <a class="card-link" href="projects/programming.html">Open programming page →</a>
-        </article>
+    <div class="project-row">
+      <div class="project-row-title"><a href="reliability/index.html">Reliability</a></div>
+      <div class="project-row-body">
+        Page for reliability engineering, Green Belt project work, PM completion, maintenance visibility,
+        and manufacturing systems.
       </div>
-    </section>
+    </div>
 
-    <section class="section" id="experience">
-      <div class="section-kicker">Experience</div>
-      <h2 class="section-title">Real engineering work, not just class summaries.</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Current / Recent</div>
-          <div class="timeline-content">
-            <h3>Reliability Engineer — Golden Aluminum</h3>
-            <p>
-              Worked on reliability improvement, downtime reduction, preventative maintenance support,
-              and recurring manufacturing equipment problems. Completed Green Belt work focused on PM completion
-              and better visibility of line status and high-priority maintenance work.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">Senior Design</div>
-          <div class="timeline-content">
-            <h3>Design Lead — ATLAS Exoskeleton</h3>
-            <p>
-              Led design and prototype development for a passive knee exoskeleton concept, including mechanism thinking,
-              CAD, testing planning, design reviews, cost constraints, and early venture development.
-            </p>
-          </div>
-        </div>
+    <div class="project-row">
+      <div class="project-row-title"><a href="experience/index.html">Overall Experience</a></div>
+      <div class="project-row-body">
+        Summary of broader engineering experience, tools, technical areas, and the way I approach engineering problems.
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section" id="skills">
-      <div class="section-kicker">Skills</div>
-      <h2 class="section-title">Technical stack and engineering strengths.</h2>
+<section class="section" id="skills">
+  <h2>Technical areas</h2>
 
-      <div class="card">
-        <div class="tags">
-          <span class="tag">Mechanical Design</span>
-          <span class="tag">SolidWorks</span>
-          <span class="tag">CAD</span>
-          <span class="tag">Reliability Engineering</span>
-          <span class="tag">Manufacturing Systems</span>
-          <span class="tag">Lean Six Sigma</span>
-          <span class="tag">MATLAB</span>
-          <span class="tag">Python</span>
-          <span class="tag">STK</span>
-          <span class="tag">Orbital Mechanics</span>
-          <span class="tag">FEA</span>
-          <span class="tag">Applied Mathematics</span>
-          <span class="tag">Technical Communication</span>
-        </div>
+  <div class="tags">
+    <span class="tag blue">Mechanical Design</span>
+    <span class="tag blue">SolidWorks</span>
+    <span class="tag blue">CAD</span>
+    <span class="tag green">Reliability Engineering</span>
+    <span class="tag green">Manufacturing Systems</span>
+    <span class="tag green">Lean Six Sigma</span>
+    <span class="tag purple">MATLAB</span>
+    <span class="tag purple">Python</span>
+    <span class="tag purple">STK</span>
+    <span class="tag orange">Applied Mathematics</span>
+    <span class="tag orange">Technical Communication</span>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <p>
+    Email: <a href="mailto:will_pado@mines.edu">will_pado@mines.edu</a><br />
+    GitHub: <a href="https://github.com/padowc-eng">github.com/padowc-eng</a><br />
+    LinkedIn: <a href="https://www.linkedin.com/">replace with LinkedIn link</a>
+  </p>
+</section>
+
       </div>
-    </section>
 
-    <section class="section" id="contact">
-      <div class="section-kicker">Contact</div>
-      <h2 class="section-title">Reach out.</h2>
-
-      <div class="contact-grid">
-        <div class="card">
-          <h3>What I’m looking for</h3>
-          <p>
-            Engineering opportunities involving mechanical design, reliability, modeling and simulation,
-            space systems, manufacturing improvement, programming, or applied mathematics.
-          </p>
-        </div>
-
-        <div class="card">
-          <a class="contact-link" href="mailto:will_pado@mines.edu">will_pado@mines.edu</a>
-          <a class="contact-link" href="https://github.com/padowc-eng">github.com/padowc-eng</a>
-          <a class="contact-link" href="https://www.linkedin.com/">Replace with LinkedIn link</a>
-        </div>
+      <div class="statusbar">
+        <span>main</span>
+        <span>HTML / CSS</span>
+        <span>padowc-eng.github.io</span>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 William Pado</p>
-  </footer>
+    </main>
+  </div>
 </body>
 </html>

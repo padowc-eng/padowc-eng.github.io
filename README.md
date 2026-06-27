@@ -1,22 +1,21 @@
-# Dark Portfolio v2
+# Code Editor Portfolio v3
 
-This is a no-image dark theme version of the portfolio.
+Dark, simple, VS Code/editor-inspired portfolio layout.
 
-## Replace your current GitHub Pages files with this structure
+## File structure
 
 index.html
 assets/css/style.css
-projects/atlas.html
-projects/reliability.html
-projects/stk.html
-projects/cad.html
-projects/programming.html
+atlas/index.html
+cad/index.html
+reliability/index.html
+experience/index.html
 
-## Required edit
+## How to use
 
-In index.html, replace the LinkedIn placeholder link with your actual LinkedIn.
+Replace the current files in your `padowc-eng.github.io` repository with these files and folders.
 
-## GitHub Pages
+## Edit next
 
-Repo should be:
-padowc-eng.github.io
+- Replace the LinkedIn placeholder in `index.html`
+- Add images later by placing them in `assets/images/` and inserting them near the relevant text sections

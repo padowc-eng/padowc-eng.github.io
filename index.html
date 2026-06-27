@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- index.html -->
+  <!-- home.html -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>index.html | William Pado</title>
+  <title>home.html | William Pado</title>
   <meta name="description" content="William Pado engineering portfolio." />
 
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -22,128 +22,117 @@
   </div>
 
   <div class="app">
+    
     <aside class="sidebar">
       <div class="sidebar-title">Explorer</div>
-
       <div class="folder-label">WILLIAM-PADO-PORTFOLIO</div>
 
       <ul class="file-tree">
-        <li><a class="active" href="index.html">index.html</a></li>
+        <li><a class="active" href="index.html">home.html</a></li>
+
         <li>
-          <span class="muted">projects/</span>
+          <a class="" href="projects/index.html">engineering-projects/</a>
           <ul class="file-tree sub">
-            <li><a class="" href="atlas/index.html">atlas-exoskeleton.html</a></li>
-            <li><a class="" href="cad/index.html">cad-design.html</a></li>
-            <li><a class="" href="reliability/index.html">reliability.html</a></li>
-            <li><a class="" href="experience/index.html">experience.html</a></li>
+            <li><a class="" href="projects/atlas-exoskeleton/index.html">atlas-exoskeleton.html</a></li>
+            <li><a class="" href="projects/mill-monitoring-system/index.html">mill-monitoring-system.html</a></li>
+            <li><a class="" href="projects/design-projects/index.html">smaller-design-projects.html</a></li>
+            <li><a class="" href="projects/stk-space-systems/index.html">stk-space-systems.html</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="" href="experience/index.html">experience/</a>
+          <ul class="file-tree sub">
+            <li><a class="" href="experience/reliability-engineer/index.html">reliability-engineer.html</a></li>
           </ul>
         </li>
       </ul>
 
       <div class="sidebar-note">
-        Simple dark portfolio layout. Images can be added later inside each project section.
+        Two main bins: Engineering Projects and Experience. Add more project folders later as needed.
       </div>
     </aside>
 
+
     <main class="editor">
       <div class="tabs">
-        <div class="tab active">index.html</div>
-<div class="tab ">atlas-exoskeleton.html</div>
-<div class="tab ">cad-design.html</div>
+        <div class="tab active">home.html</div>
+<div class="tab ">engineering-projects.html</div>
+<div class="tab ">experience.html</div>
       </div>
 
       <div class="content">
         
-<div class="kicker">// engineering portfolio</div>
+<div class="kicker">// home</div>
 
 <h1 class="page-title">William Pado</h1>
 
 <p class="page-subtitle">
-  Mechanical engineer focused on design, reliability, modeling, applied mathematics,
-  CAD, and technical problem solving.
+  Mechanical engineer focused on design, reliability, modeling, CAD, applied mathematics,
+  and practical technical problem solving.
 </p>
 
 <div class="link-row">
-  <a href="atlas/index.html">ATLAS Exoskeleton</a>
-  <a href="cad/index.html">CAD / Design</a>
-  <a href="reliability/index.html">Reliability</a>
+  <a href="projects/index.html">Engineering Projects</a>
   <a href="experience/index.html">Experience</a>
   <a href="mailto:will_pado@mines.edu">Email</a>
   <a href="https://github.com/padowc-eng">GitHub</a>
 </div>
 
 <div class="code-block">
-  <pre><span class="comment">// portfolio purpose</span>
-<span class="key">const</span> focus = {{
-  <span class="key">design</span>: <span class="string">"mechanical design, CAD, prototyping, product development"</span>,
-  <span class="key">reliability</span>: <span class="string">"manufacturing systems, PM completion, downtime reduction"</span>,
-  <span class="key">analysis</span>: <span class="string">"MATLAB, STK, Python, applied math, modeling"</span>,
-  <span class="key">goal</span>: <span class="string">"show project-based engineering skill without duplicating my resume"</span>
-}};</pre>
+  <pre><span class="comment">// portfolio structure</span>
+<span class="key">home</span>: <span class="string">"short overview and contact"</span>
+<span class="key">engineering_projects</span>: <span class="string">"standalone projects, grouped design projects, modeling work"</span>
+<span class="key">experience</span>: <span class="string">"positions, responsibilities, engineering work, tools used"</span></pre>
 </div>
 
-<section class="section" id="project-index">
-  <h2>Project index</h2>
-
+<section class="section" id="overview">
+  <h2>Overview</h2>
   <p>
-    This portfolio is organized like a file tree. Each page is meant to support a different type of role,
-    so someone can quickly jump to the work that matters to them.
+    This portfolio is built to be expanded over time. The main split is between
+    <strong>Engineering Projects</strong> and <strong>Experience</strong>. Projects show what I have designed,
+    built, analyzed, or programmed. Experience gives context for professional roles and responsibilities.
   </p>
+</section>
 
-  <div class="project-list">
-    <div class="project-row">
-      <div class="project-row-title"><a href="atlas/index.html">ATLAS Exoskeleton</a></div>
-      <div class="project-row-body">
-        Full project page for the passive knee exoskeleton: concept, design problem, mechanism thinking,
-        prototype work, and product constraints.
+<section class="section" id="main-bins">
+  <h2>Main bins</h2>
+
+  <div class="bin-list">
+    <div class="bin-row">
+      <div class="bin-title"><a href="projects/index.html">Engineering Projects</a></div>
+      <div class="bin-body">
+        Standalone and grouped engineering work: ATLAS Exoskeleton, mill monitoring system,
+        smaller design projects, STK/modeling work, and future project pages.
       </div>
     </div>
 
-    <div class="project-row">
-      <div class="project-row-title"><a href="cad/index.html">CAD / Design</a></div>
-      <div class="project-row-body">
-        Page for SolidWorks, mechanical design, assemblies, drawings, mechanisms, and future design images.
-      </div>
-    </div>
-
-    <div class="project-row">
-      <div class="project-row-title"><a href="reliability/index.html">Reliability</a></div>
-      <div class="project-row-body">
-        Page for reliability engineering, Green Belt project work, PM completion, maintenance visibility,
-        and manufacturing systems.
-      </div>
-    </div>
-
-    <div class="project-row">
-      <div class="project-row-title"><a href="experience/index.html">Overall Experience</a></div>
-      <div class="project-row-body">
-        Summary of broader engineering experience, tools, technical areas, and the way I approach engineering problems.
+    <div class="bin-row">
+      <div class="bin-title"><a href="experience/index.html">Experience</a></div>
+      <div class="bin-body">
+        Professional experience organized by position, starting with Reliability Engineer work.
+        This is where roles, responsibilities, tools, and workplace engineering work live.
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="skills">
-  <h2>Technical areas</h2>
-
+<section class="section" id="technical-focus">
+  <h2>Technical focus</h2>
   <div class="tags">
     <span class="tag blue">Mechanical Design</span>
-    <span class="tag blue">SolidWorks</span>
-    <span class="tag blue">CAD</span>
+    <span class="tag blue">SolidWorks / CAD</span>
     <span class="tag green">Reliability Engineering</span>
     <span class="tag green">Manufacturing Systems</span>
-    <span class="tag green">Lean Six Sigma</span>
     <span class="tag purple">MATLAB</span>
     <span class="tag purple">Python</span>
     <span class="tag purple">STK</span>
     <span class="tag orange">Applied Mathematics</span>
-    <span class="tag orange">Technical Communication</span>
   </div>
 </section>
 
 <section class="section" id="contact">
   <h2>Contact</h2>
-
   <p>
     Email: <a href="mailto:will_pado@mines.edu">will_pado@mines.edu</a><br />
     GitHub: <a href="https://github.com/padowc-eng">github.com/padowc-eng</a><br />

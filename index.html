@@ -1,112 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- Basic browser setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Browser tab title -->
   <title>William Pado | Engineering Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
 
-    h1, h2, h3 {
-      color: #111;
-    }
+  <!-- Site description -->
+  <meta
+    name="description"
+    content="Engineering portfolio for William Pado, including mechanical design, reliability engineering, STK, CAD, MATLAB, Python, and project-based engineering experience."
+  />
 
-    .project, .experience {
-      border-left: 4px solid #222;
-      padding-left: 15px;
-      margin-bottom: 30px;
-    }
-
-    a {
-      color: #0056b3;
-    }
-  </style>
+  <!-- Link to shared CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+  <!-- Top navigation bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">William Pado</a>
 
-  <h1>William Pado</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects/atlas.html">ATLAS</a>
+        <a href="projects/reliability.html">Reliability</a>
+        <a href="projects/stk.html">STK</a>
+        <a href="projects/cad.html">CAD</a>
+        <a href="projects/programming.html">Programming</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    Mechanical engineer focused on reliability engineering, mechanical design,
-    modeling and simulation, applied mathematics, and practical engineering problem solving.
-  </p>
+  <!-- Big homepage intro -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Mechanical Engineering Portfolio</div>
 
-  <p>
-    <a href="mailto:will_pado@mines.edu">will_pado@mines.edu</a> |
-    <a href="resume.pdf">Resume</a> |
-    <a href="https://github.com/padowc-eng/Portfolio">GitHub</a> |
-    <a href="https://www.linkedin.com/">LinkedIn</a>
-  </p>
+      <h1>Design, reliability, modeling, and practical engineering problem solving.</h1>
 
-  <h2>About</h2>
-  <p>
-    I am a mechanical engineer with experience in reliability engineering,
-    mechanical design, manufacturing systems, and engineering analysis.
-    I am interested in work that combines practical engineering with stronger
-    mathematical modeling, design, and system-level thinking.
-  </p>
+      <p>
+        I am a mechanical engineer focused on reliability engineering, mechanical design,
+        modeling and simulation, applied mathematics, and building useful systems from
+        messy real-world problems.
+      </p>
 
-  <h2>Featured Projects</h2>
+      <div class="button-row">
+        <a class="button" href="#projects">View Projects</a>
+        <a class="button secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>ATLAS Passive Knee Exoskeleton</h3>
-    <p>
-      Senior design entrepreneurship project focused on developing a passive
-      knee exoskeleton to reduce knee strain and improve hiking efficiency.
-      The design used a spring-assisted mechanism to store and return energy
-      during knee motion.
-    </p>
-    <p>
-      Skills: SolidWorks, mechanical design, prototyping, testing, product development.
-    </p>
-  </div>
+  <main>
+    <!-- About section -->
+    <section class="section" id="about">
+      <h2 class="section-title">About</h2>
 
-  <div class="project">
-    <h3>Molniya Orbit Constellation Project</h3>
-    <p>
-      Designed and analyzed a four-satellite Molniya orbit constellation for
-      continuous northern-region coverage using orbital mechanics and STK.
-    </p>
-    <p>
-      Skills: STK, orbital mechanics, MATLAB, mission design, systems engineering.
-    </p>
-  </div>
+      <p class="section-lead">
+        My background combines hands-on mechanical design, reliability work in manufacturing,
+        MATLAB/STK analysis, CAD, and project-based engineering. This site is organized by
+        skill area so a company can quickly jump to the type of work they care about.
+      </p>
 
-  <div class="project">
-    <h3>Reliability Engineering Dashboard</h3>
-    <p>
-      Developed a mill monitoring system to improve visibility of equipment
-      status and high-priority maintenance work. This supported preventative
-      maintenance completion and reliability improvement.
-    </p>
-    <p>
-      Skills: reliability engineering, Lean Six Sigma, manufacturing systems,
-      process improvement.
-    </p>
-  </div>
+      <div class="grid three">
+        <div class="card">
+          <h3>Design & Prototyping</h3>
+          <p>
+            Mechanical design, CAD, early prototype development, design tradeoffs,
+            cost constraints, and practical product thinking.
+          </p>
+        </div>
 
-  <h2>Experience</h2>
+        <div class="card">
+          <h3>Reliability & Systems</h3>
+          <p>
+            Manufacturing reliability, preventative maintenance support, line-status visibility,
+            troubleshooting, and process improvement.
+          </p>
+        </div>
 
-  <div class="experience">
-    <h3>Reliability Engineer — Golden Aluminum</h3>
-    <p>
-      Worked on reliability improvement, downtime reduction, preventative
-      maintenance support, and troubleshooting recurring manufacturing equipment issues.
-    </p>
-  </div>
+        <div class="card">
+          <h3>Modeling & Analysis</h3>
+          <p>
+            MATLAB, STK, orbital mechanics, engineering calculations, data analysis,
+            and applied mathematics-focused problem solving.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Skills</h2>
-  <p>
-    MATLAB, SolidWorks, Python, STK, Simulink, FEA, reliability engineering,
-    mechanical design, manufacturing systems, applied mathematics, data analysis.
-  </p>
+    <!-- Project page links -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Project-Based Skills</h2>
 
+      <p class="section-lead">
+        Each section below opens a separate page. This keeps the portfolio useful for different
+        kinds of roles: design, reliability, space systems, CAD, or programming.
+      </p>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>ATLAS Passive Knee Exoskeleton</h3>
+          <p>
+            Senior design entrepreneurship project focused on a passive knee-assist device
+            for hiking and knee strain reduction.
+          </p>
+          <div class="tags">
+            <span class="tag">Mechanical Design</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Product Development</span>
+          </div>
+          <a class="card-link" href="projects/atlas.html">Open ATLAS project →</a>
+        </article>
+
+        <article class="card">
+          <h3>Reliability Engineering</h3>
+          <p>
+            Manufacturing reliability, Lean Six Sigma Green Belt work, PM completion support,
+            dashboard thinking, and process improvement.
+          </p>
+          <div class="tags">
+            <span class="tag">Reliability</span>
+            <span class="tag">Lean Six Sigma</span>
+            <span class="tag">Manufacturing</span>
+          </div>
+          <a class="card-link" href="projects/reliability.html">Open reliability page →</a>
+        </article>
+
+        <article class="card">
+          <h3>STK / Space Systems</h3>
+          <p>
+            Molniya orbit constellation analysis, orbital mechanics, mission design,
+            and STK-based modeling.
+          </p>
+          <div class="tags">
+            <span class="tag">STK</span>
+            <span class="tag">Orbital Mechanics</span>
+            <span class="tag">Mission Design</span>
+          </div>
+          <a class="card-link" href="projects/stk.html">Open STK page →</a>
+        </article>
+
+        <article class="card">
+          <h3>Design / SolidWorks / CAD</h3>
+          <p>
+            Mechanical design work, CAD, mechanisms, assemblies, prototype parts,
+            and design documentation.
+          </p>
+          <div class="tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">CAD</span>
+            <span class="tag">Design</span>
+          </div>
+          <a class="card-link" href="projects/cad.html">Open CAD page →</a>
+        </article>
+
+        <article class="card">
+          <h3>Programming / MATLAB / Python</h3>
+          <p>
+            MATLAB and Python work for engineering analysis, simulations,
+            data processing, plots, and technical tools.
+          </p>
+          <div class="tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <a class="card-link" href="projects/programming.html">Open programming page →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience summary -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Reliability Engineer — Golden Aluminum</h3>
+          <p>
+            Worked on reliability improvement, downtime reduction, preventative maintenance
+            support, and troubleshooting recurring manufacturing equipment issues.
+          </p>
+          <p>
+            Completed Lean Six Sigma Green Belt work focused on improving PM completion
+            through better visibility of line status and high-priority work.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Senior Design Lead — ATLAS Exoskeleton</h3>
+          <p>
+            Led design and prototype development for a passive knee exoskeleton concept,
+            including mechanism thinking, CAD, testing planning, design reviews,
+            product constraints, and early venture development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills keywords -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="card">
+        <div class="tags">
+          <span class="tag">Mechanical Design</span>
+          <span class="tag">Reliability Engineering</span>
+          <span class="tag">Manufacturing Systems</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Python</span>
+          <span class="tag">STK</span>
+          <span class="tag">Orbital Mechanics</span>
+          <span class="tag">FEA</span>
+          <span class="tag">Lean Six Sigma</span>
+          <span class="tag">Applied Mathematics</span>
+          <span class="tag">Technical Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact info -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="card">
+        <p>
+          I am interested in engineering opportunities involving mechanical design,
+          reliability, modeling and simulation, space systems, manufacturing improvement,
+          programming, and applied mathematics.
+        </p>
+
+        <p>
+          Email: <a href="mailto:will_pado@mines.edu">will_pado@mines.edu</a>
+        </p>
+
+        <p>
+          GitHub: <a href="https://github.com/padowc-eng">github.com/padowc-eng</a>
+        </p>
+
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/">replace with your LinkedIn link</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 William Pado</p>
+  </footer>
 </body>
 </html>

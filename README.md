@@ -1,6 +1,6 @@
-# Code Editor Portfolio v5 Clean
+# Code Editor Portfolio v6 Standard Colors
 
-Dark, simple, code-editor-inspired portfolio without fake window chrome or tabs.
+Same clean layout as v5, but with a standardized color system.
 
 ## Main hierarchy
 
@@ -12,20 +12,16 @@ Dark, simple, code-editor-inspired portfolio without fake window chrome or tabs.
 - Professional Experience
   - Reliability Engineer
 
-## File structure
+## Color system
 
-index.html
-assets/css/style.css
-projects/index.html
-projects/atlas-exoskeleton/index.html
-projects/cad-design/index.html
-projects/stk-space-systems/index.html
-experience/index.html
-experience/reliability-engineer/index.html
+- Background: dark navy/charcoal
+- Body text: muted gray-blue, softer than white
+- Headers: soft off-white
+- Links/navigation: one consistent blue
+- Small context labels: subtle teal
+- Tags: neutral
+- Code strings/values: no neon random colors
 
 ## Notes
 
-- No fake dots/titlebar/tabs.
-- No "Explorer" label.
-- Reliability is now under Professional Experience.
-- Replace the LinkedIn placeholder in index.html.
+Replace the LinkedIn placeholder in index.html.

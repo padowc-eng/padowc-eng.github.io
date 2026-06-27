@@ -1,17 +1,13 @@
 /*
   William Pado Portfolio
-  v6: Clean dark code-editor inspired layout
+  v7: Clean dark code-editor inspired layout
 
   Color system:
-  - Background: near-black/navy, but not pure black
-  - Main text: muted gray-blue to reduce eye strain
+  - Body text: muted gray-blue, not harsh white
   - Headers: soft off-white
-  - Links/navigation: one consistent blue
-  - Small labels/kickers: one subtle teal accent
-  - Borders: low-contrast gray
-  - Tags: mostly neutral, with very subtle blue accent
-
-  This avoids the earlier random orange/green/purple look.
+  - Links/navigation: consistent blue
+  - Small labels: subtle teal
+  - Tags: neutral
 */
 
 /* ---------- Theme ---------- */
@@ -78,12 +74,12 @@ strong {
   min-height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 290px 1fr;
   border-left: 1px solid var(--line-soft);
   border-right: 1px solid var(--line-soft);
 }
 
-/* ---------- Sidebar / file tree ---------- */
+/* ---------- Sidebar ---------- */
 .sidebar {
   background: var(--sidebar);
   border-right: 1px solid var(--line);
@@ -128,6 +124,11 @@ strong {
   text-decoration: none;
 }
 
+.file-tree .sub {
+  padding-left: 17px;
+  margin-top: 2px;
+}
+
 .sidebar-note {
   border-top: 1px solid var(--line);
   margin-top: 24px;
@@ -142,15 +143,11 @@ strong {
   background: var(--editor);
 }
 
-/* ---------- Content ---------- */
 .content {
   padding: 48px 38px 72px;
 }
 
-/*
-  Small context label above the page title.
-  Uses teal accent consistently across all pages.
-*/
+/* ---------- Typography ---------- */
 .kicker {
   color: var(--accent);
   font-size: 14px;
@@ -160,7 +157,7 @@ strong {
 .page-title {
   color: var(--heading);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  font-size: clamp(34px, 5vw, 56px);
+  font-size: clamp(34px, 5vw, 54px);
   line-height: 1.05;
   letter-spacing: -1.2px;
   margin: 0 0 14px;
@@ -173,7 +170,7 @@ strong {
   margin-bottom: 28px;
 }
 
-/* ---------- Navigation links ---------- */
+/* ---------- Links ---------- */
 .link-row {
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +227,7 @@ strong {
 .section h2 {
   color: var(--heading);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 1.15;
   letter-spacing: -0.4px;
   margin: 0 0 14px;
@@ -261,7 +258,7 @@ strong {
   color: var(--muted);
 }
 
-/* ---------- Code-like blocks ---------- */
+/* ---------- Code blocks ---------- */
 .code-block {
   border: 1px solid var(--line);
   background: var(--code-bg);
@@ -277,24 +274,10 @@ strong {
   line-height: 1.6;
 }
 
-/*
-  Code block color system:
-  - comments: muted gray
-  - keys/variables: blue
-  - strings/values: same muted body text, not neon
-*/
-.comment {
-  color: var(--muted-dark);
-}
-
-.key {
-  color: var(--link);
-}
-
+.comment { color: var(--muted-dark); }
+.key { color: var(--link); }
 .value,
-.string {
-  color: var(--text);
-}
+.string { color: var(--text); }
 
 /* ---------- Rows / bins ---------- */
 .bin-list {
@@ -304,7 +287,7 @@ strong {
 
 .bin-row {
   display: grid;
-  grid-template-columns: 255px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 18px;
   padding: 18px;
   border-bottom: 1px solid var(--line);
@@ -334,6 +317,39 @@ strong {
   margin-top: 0;
 }
 
+/* ---------- Images ---------- */
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 22px 0 10px;
+}
+
+.figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--code-bg);
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 430px;
+  object-fit: contain;
+}
+
+.figure.wide img {
+  max-height: 520px;
+}
+
+.figure figcaption {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  padding: 9px 11px;
+}
+
 /* ---------- Tags ---------- */
 .tags {
   display: flex;
@@ -342,11 +358,6 @@ strong {
   margin-top: 14px;
 }
 
-/*
-  Tags are now neutral by default.
-  Existing HTML may still have classes like blue/green/purple/orange,
-  but they intentionally map to the same restrained system.
-*/
 .tag,
 .tag.blue,
 .tag.green,
@@ -361,7 +372,7 @@ strong {
   font-size: 13px;
 }
 
-/* ---------- Future image note ---------- */
+/* ---------- Notes ---------- */
 .image-note {
   border-left: 3px solid var(--link);
   background: rgba(121, 184, 255, 0.08);
@@ -385,7 +396,8 @@ strong {
     padding: 34px 20px 62px;
   }
 
-  .bin-row {
+  .bin-row,
+  .media-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -401,3 +401,60 @@ strong {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ---------- Drawing/document gallery ---------- */
+.drawing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin: 22px 0;
+}
+
+.drawing-card {
+  border: 1px solid var(--line);
+  background: var(--code-bg);
+}
+
+.drawing-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.drawing-card-content {
+  border-top: 1px solid var(--line);
+  padding: 13px 14px;
+}
+
+.drawing-card h3 {
+  margin: 0 0 6px;
+  color: var(--heading);
+  font-size: 17px;
+}
+
+.drawing-card p {
+  margin: 0 0 8px;
+  color: var(--text-soft);
+}
+
+.drawing-card a {
+  font-size: 14px;
+}
+
+.figure.single {
+  margin: 22px 0;
+}
+
+.figure.single img {
+  max-height: 560px;
+}
+
+@media (min-width: 980px) {
+  .drawing-grid.two-column {
+    grid-template-columns: 1fr 1fr;
+  }
+}

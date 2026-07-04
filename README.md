@@ -1,25 +1,22 @@
-# Code Editor Portfolio v7
+# Code Editor Portfolio v8
 
-Adds:
-- Education folder
-- Aeronautics page
-- Boeing 737 MAX PDF link
-- ATLAS images embedded directly in the project page
+Adds Golden Aluminum-related assets:
 
-## Main hierarchy
+- Redacted mill status dashboard image under Professional Experience > Reliability Engineer
+- CAD/drawing previews and PDF links under Technical/Engineering Projects > CAD / Design Projects
+- Education section and Aeronautics page retained
 
-- Home
-- Technical/Engineering Projects
-  - ATLAS Exoskeleton
-  - CAD / Design
-  - STK / Space Systems
-- Professional Experience
-  - Reliability Engineer
-- Education
-  - Aeronautics
+## New assets
 
-## Uploaded assets included
+assets/images/mill-display-redacted.jpg
+assets/images/tank-sensor-drawing.png
+assets/images/distance-sensor-mounting.png
+assets/images/selee-bowl-heater.png
+assets/images/encoder-shaft-drawing.png
+assets/images/launder-table.png
 
-assets/images/atlas-solidworks-assembly.png
-assets/images/atlas-worn-lake.jpg
-assets/docs/boeing-737-max-quantitative-analysis-report.pdf
+assets/docs/tank-sensor-drawing.pdf
+assets/docs/distance-sensor-mounting.pdf
+assets/docs/selee-bowl-heater.pdf
+assets/docs/encoder-shaft-drawing.pdf
+assets/docs/launder-table.pdf

@@ -1,11 +1,12 @@
-# Code Editor Portfolio v11
+# William Pado Engineering Portfolio
 
-Fix:
-- Replaced the ATLAS final design report with the re-uploaded valid PDF.
-- Regenerated the first-page report preview from the valid PDF.
+Current structure:
+- Home
+- Technical/Engineering Projects
+  - ATLAS Passive Knee Exoskeleton
+  - CAD / Design Projects
+- Professional Experience
+  - Reliability Engineer — Golden Aluminum
+- Education (single-page course section)
 
-ATLAS report path:
-assets/docs/atlas-exoskeleton-final-design-report.pdf
-
-Preview path:
-assets/images/atlas-final-design-report-preview.jpg
+The Golden Aluminum mill display is stored unblurred at `assets/images/mill-display.png` and is shown under the Lean Six Sigma Green Belt Project.

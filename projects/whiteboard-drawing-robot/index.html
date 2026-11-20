@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>whiteboard-drawing-robot.html | William Pado</title>
+  <meta name="description" content="William Pado engineering portfolio." />
+
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="folder-label">WILLIAM-PADO-PORTFOLIO</div>
+
+      <ul class="file-tree">
+        <li><a href="../../index.html">home.html</a></li>
+
+        <li>
+          <a href="../../projects/index.html">technical-engineering-projects/</a>
+          <ul class="file-tree sub">
+            <li><a href="../../projects/atlas-exoskeleton/index.html">atlas-exoskeleton.html</a></li>
+            <li><a class="active" href="../../projects/whiteboard-drawing-robot/index.html">whiteboard-drawing-robot.html</a></li>
+            <li><a href="../../projects/cad-design/index.html">cad-design.html</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../../experience/index.html">professional-experience/</a>
+          <ul class="file-tree sub">
+            <li><a href="../../experience/reliability-engineer/index.html">reliability-engineer.html</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../../education/index.html">education/</a></li>
+      </ul>
+
+      <div class="sidebar-note">
+        Projects, professional experience, and education/coursework.
+      </div>
+    </aside>
+
+    <main class="editor">
+      <div class="content">
+        <div class="kicker">technical-engineering-projects / whiteboard-drawing-robot</div>
+
+        <h1 class="page-title">Whiteboard Drawing Robot</h1>
+
+        <p class="page-subtitle">
+          Robot Mechanics project combining mechanical design, kinematics, image processing, motion planning, and Raspberry Pi motor control.
+        </p>
+
+        <section class="section no-top-margin" id="overview">
+          <h2>Overview</h2>
+          <p>
+            The system converts an input image into drawing paths for a planar whiteboard arm. The software handles image cleanup and vectorization, closed-loop linkage kinematics, B-spline path fitting, motion planning, and execution on a Raspberry Pi.
+          </p>
+        </section>
+
+        <section class="section" id="system">
+          <h2>System</h2>
+          <p>
+            The design uses a two-link drawing arm with stepper-motor reductions and a servo-actuated marker lift. A desktop application provides path preview, hardware execution, and G-code export.
+          </p>
+        </section>
+
+        <section class="section" id="source">
+          <h2>Source Code</h2>
+          <p>
+            Clean project source containing the desktop application, linkage geometry, vectorization, path generation, motion planning, Raspberry Pi worker, and verification tests.
+          </p>
+          <div class="link-row">
+            <a href="../../assets/code/whiteboard-drawing-robot-source.zip">Download project source</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -8,6 +8,7 @@
   <meta name="description" content="William Pado engineering portfolio." />
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -69,32 +70,62 @@
 
         <section class="section" id="robot-mechanics">
           <h2>MEGN 544 — Robot Mechanics</h2>
-          <p>
-            Graduate robotics coursework covering rigid-body transformations, kinematics, and trajectory planning. My main course project is a whiteboard drawing robot with a custom planar arm and a Python motion-planning and control stack.
-          </p>
-          <div class="link-row">
-            <a href="../projects/whiteboard-drawing-robot/index.html">View Whiteboard Drawing Robot</a>
+          <div class="course-visual">
+            <div>
+              <p>
+                Graduate robotics coursework covering rigid-body transformations, kinematics, and trajectory planning. My main course project is a whiteboard drawing robot with a custom planar arm and a Python motion-planning and control stack.
+              </p>
+              <div class="link-row">
+                <a href="../projects/whiteboard-drawing-robot/index.html">View Whiteboard Drawing Robot</a>
+              </div>
+            </div>
+            <figure class="visual-card">
+              <img src="../assets/images/whiteboard-kinematics.png" alt="Whiteboard drawing robot kinematics" />
+              <figcaption class="visual-card-body"><p>Closed-loop arm geometry used by the project software.</p></figcaption>
+            </figure>
           </div>
         </section>
 
         <section class="section" id="advanced-dynamics">
           <h2>MEGN 514A — Advanced Dynamics</h2>
-          <p>
-            Graduate dynamics coursework with analytical and numerical modeling in MATLAB. Selected work includes a hummingbird wing model that combines prescribed flapping motion, aerodynamic force calculations, flexible-wing deflection, and trimmed flight conditions.
-          </p>
-          <div class="link-row">
-            <a href="../assets/code/hummingbird-wing-model.m">Open MATLAB model</a>
-            <a href="../assets/cad/hummingbird-wing.SLDPRT">Download SolidWorks wing model</a>
+          <div class="course-visual">
+            <div>
+              <p>
+                Graduate dynamics coursework with analytical and numerical modeling in MATLAB. Selected work includes a hummingbird wing model with prescribed flapping motion, aerodynamic force calculations, flexible-wing deflection, and trimmed flight conditions.
+              </p>
+              <p class="engineering-note">
+                The visualization uses the geometry defined in the MATLAB model: 54.5 mm wing radius, a 50% rigid inner section, tapered chord, and a flexible distal section.
+              </p>
+            </div>
+            <div class="viewer-shell">
+              <model-viewer
+                src="../assets/models/hummingbird-model-geometry.glb"
+                poster="../assets/images/hummingbird-model-geometry.png"
+                alt="Interactive hummingbird wing model geometry"
+                camera-controls
+                auto-rotate
+                rotation-per-second="10deg"
+                shadow-intensity="0.55"
+                exposure="1.0"
+                touch-action="pan-y">
+              </model-viewer>
+              <div class="viewer-caption"><strong>Model geometry</strong><span class="viewer-hint">drag to rotate · scroll to zoom</span></div>
+            </div>
           </div>
         </section>
 
         <section class="section" id="advanced-engineering-analysis">
           <h2>MEGN 502 — Advanced Engineering Analysis</h2>
-          <p>
-            Graduate applied-mathematics coursework using MATLAB for engineering analysis. Selected labs include eigenvalue systems, special functions, Sturm-Liouville eigenproblems, and analytical/numerical solution methods.
-          </p>
-          <div class="link-row">
-            <a href="../assets/code/advanced-engineering-analysis-matlab-labs.zip">Download selected MATLAB labs</a>
+          <div class="course-visual">
+            <div>
+              <p>
+                Graduate applied-mathematics coursework using MATLAB for engineering analysis. Selected labs include eigenvalue systems, special functions, Sturm-Liouville eigenproblems, and analytical/numerical solution methods.
+              </p>
+            </div>
+            <figure class="visual-card">
+              <img src="../assets/images/advanced-analysis-eigenfunctions.png" alt="First four Sturm-Liouville eigenfunctions from Advanced Engineering Analysis Lab 5" />
+              <figcaption class="visual-card-body"><p>First four normalized eigenfunctions from the Sturm-Liouville lab.</p></figcaption>
+            </figure>
           </div>
         </section>
 
@@ -103,10 +134,6 @@
           <p>
             Combustion coursework using MATLAB, Python, and Cantera for reacting-flow and energy-balance analysis. Selected work includes Cantera flame calculations and a two-dimensional cell-based wildfire energy model with fuel moisture, wind, heat transfer, combustion, and fuel consumption.
           </p>
-          <div class="link-row">
-            <a href="../assets/code/adiabatic-flame-cantera.py">Open Cantera flame code</a>
-            <a href="../assets/code/wildfire-energy-balance-2d.m">Open wildfire MATLAB model</a>
-          </div>
         </section>
 
         <section class="section" id="continuum-mechanics">

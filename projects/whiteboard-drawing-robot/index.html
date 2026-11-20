@@ -8,6 +8,7 @@
   <meta name="description" content="William Pado engineering portfolio." />
 
   <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -50,31 +51,84 @@
         <h1 class="page-title">Whiteboard Drawing Robot</h1>
 
         <p class="page-subtitle">
-          Robot Mechanics project combining mechanical design, kinematics, image processing, motion planning, and Raspberry Pi motor control.
+          Robot Mechanics project combining mechanical design, closed-loop kinematics, image processing, motion planning, and Raspberry Pi motor control.
         </p>
 
-        <section class="section no-top-margin" id="overview">
-          <h2>Overview</h2>
+        <section class="section no-top-margin" id="interactive-model">
+          <h2>Mechanism</h2>
           <p>
-            The system converts an input image into drawing paths for a planar whiteboard arm. The software handles image cleanup and vectorization, closed-loop linkage kinematics, B-spline path fitting, motion planning, and execution on a Raspberry Pi.
+            The project geometry uses a 48 × 60 in whiteboard, 20 in primary link, 20 in forearm, and a separate 20 in secondary connecting rod. The interactive view below is a kinematic visualization built directly from those project dimensions; the pulley geometry comes from the STEP files included with the CAD assembly.
           </p>
+
+          <div class="viewer-shell">
+            <model-viewer
+              src="../../assets/models/whiteboard-kinematic-model.glb"
+              poster="../../assets/images/whiteboard-kinematics.png"
+              alt="Interactive kinematic model of the whiteboard drawing robot"
+              camera-controls
+              auto-rotate
+              rotation-per-second="12deg"
+              shadow-intensity="0.7"
+              exposure="1.0"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="viewer-caption">
+              <strong>Kinematic mechanism visualization</strong>
+              <span class="viewer-hint">drag to rotate · scroll to zoom</span>
+            </div>
+          </div>
+
+          <div class="visual-grid">
+            <figure class="visual-card">
+              <img src="../../assets/images/whiteboard-kinematics.png" alt="Whiteboard robot linkage geometry diagram" />
+              <figcaption class="visual-card-body">
+                <h3>Linkage geometry</h3>
+                <p>Home-pose diagram using the exact dimensions and closed-loop linkage definitions in the project geometry code.</p>
+              </figcaption>
+            </figure>
+
+            <div class="viewer-shell">
+              <model-viewer
+                src="../../assets/models/whiteboard-drive-pulleys.glb"
+                poster="../../assets/images/whiteboard-drive-pulleys.png"
+                alt="Interactive 20 tooth and 80 tooth GT2 pulley models"
+                camera-controls
+                auto-rotate
+                rotation-per-second="16deg"
+                shadow-intensity="0.65"
+                exposure="1.0"
+                touch-action="pan-y">
+              </model-viewer>
+              <div class="viewer-caption">
+                <strong>Exact STEP pulley geometry</strong>
+                <span class="viewer-hint">drag to rotate · scroll to zoom</span>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section class="section" id="system">
-          <h2>System</h2>
-          <p>
-            The design uses a two-link drawing arm with stepper-motor reductions and a servo-actuated marker lift. A desktop application provides path preview, hardware execution, and G-code export.
-          </p>
+        <section class="section" id="pipeline">
+          <h2>Drawing Pipeline</h2>
+          <div class="process-strip">
+            <div class="process-step"><strong>Input Image</strong><span>load and clean the source image</span></div>
+            <div class="process-step"><strong>Vectorize</strong><span>convert image features into strokes</span></div>
+            <div class="process-step"><strong>Fit Paths</strong><span>scale and fit strokes inside the reachable board area</span></div>
+            <div class="process-step"><strong>Kinematics</strong><span>map marker positions through the closed-loop arm geometry</span></div>
+            <div class="process-step"><strong>Execute</strong><span>send planned motion to the Raspberry Pi hardware</span></div>
+          </div>
         </section>
 
-        <section class="section" id="source">
-          <h2>Source Code</h2>
+        <section class="section" id="software">
+          <h2>Software</h2>
           <p>
-            Clean project source containing the desktop application, linkage geometry, vectorization, path generation, motion planning, Raspberry Pi worker, and verification tests.
+            The Python project includes image vectorization, B-spline path generation, exact closed-loop linkage calculations, motor-step planning, G-code export, a desktop preview application, Raspberry Pi execution, and verification tests.
           </p>
           <div class="link-row">
-            <a href="../../assets/code/whiteboard-drawing-robot-source.zip">Download project source</a>
           </div>
+        </section>
+
+        <section class="section" id="cad-note">
+          <h2>CAD</h2>
         </section>
       </div>
     </main>
